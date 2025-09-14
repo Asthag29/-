@@ -6,72 +6,238 @@
   <title>Astha Gupta - Personal Website</title>
   <link rel="stylesheet" href="style.css" />
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <img src="your-photo.jpg" alt="Astha Gupta" class="profile-pic" />
-    <h1>Astha Gupta</h1>
-    <p class="subtitle">Masters in Statistics & Data Science @ LMU Munich</p>
-    <div class="social-links">
-      <a href="https://github.com/Asthag29" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:your.email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <img src="image.png" alt="Astha Gupta" class="profile-pic" />
+        <h1 class="hero-title">Astha Gupta</h1>
+        <p class="hero-subtitle">Masters in Statistics & Data Science @ Ludwig Maximilian University, Munich</p>
+        <div class="contact-info">
+          <a href="mailto:asthadu29@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>asthadu29@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/astha-gupta-772878219/" target="_blank" class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/Asthag29" target="_blank" class="contact-item">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <div class="content-grid">
+      <section class="section-card">
+        <h2 class="section-title">
+          <i class="fas fa-user"></i>
+          About Me
+        </h2>
+        <p class="about-text">
+          Hi! I'm Astha, a data science enthusiast currently pursuing my Masters at LMU Munich. I love building impactful solutions, exploring neural networks, and understanding the math behind machine learning. I'm passionate about research and enjoy working on innovative projects that bridge theory and real-world applications.
+        </p>
+      </section>
     </div>
-  </header>
 
-  <section>
-    <h2><i class="fas fa-user"></i> About Me</h2>
-    <p>
-      Hi! I'm Astha, passionate about data science, machine learning, and building impactful solutions. I love exploring new technologies and collaborating on innovative projects.
-    </p>
-  </section>
+    
+    <!-- Education Section -->
+    <section class="full-section">
+      <h2 class="section-title">
+        <i class="fas fa-graduation-cap"></i>
+        Education
+      </h2>
+      <div class="education-timeline">
+        <div class="education-item">
+          <div class="education-content">
+            <h3 class="edu-title">Masters in Statistics & Data Science</h3>
+            <p class="edu-institution">Ludwig Maximilian University</p>
+            <p class="edu-date">Munich, Germany</p>
+          </div>
+          <div class="education-year">2024 - Present</div>
+        </div>
+        <div class="education-item">
+          <div class="education-content">
+            <h3 class="edu-title">Bachelors in Statistics (Honours)</h3>
+            <p class="edu-institution">University of Delhi</p>
+            <p class="edu-date">New Delhi, India</p>
+            <p class="edu-grade">CGPA: 8.546</p>
+          </div>
+          <div class="education-year">2021 - 2024</div>
+        </div>
+        <div class="education-item">
+          <div class="education-content">
+            <h3 class="edu-title">High School</h3>
+            <p class="edu-institution">St. Joseph Academy</p>
+            <p class="edu-date">New Delhi, India</p>
+            <p class="edu-grade">96%</p>
+          </div>
+          <div class="education-year">2018 - 2021</div>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2><i class="fas fa-briefcase"></i> Projects</h2>
-    <ul>
-      <li>
-        <a href="https://github.com/Asthag29/Personal-Website" target="_blank">
-          <i class="fab fa-github"></i> Personal Website
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/Asthag29/Some-Other-Project" target="_blank">
-          <i class="fab fa-github"></i> Some Other Project
-        </a>
-      </li>
-    </ul>
-  </section>
 
-  <section>
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-    <ul>
-      <li>
-        <strong>LMU Munich</strong> — Masters in Statistics & Data Science<br>
-        <span class="edu-date">2023 - Present</span>
-      </li>
-      <li>
-        <strong>Your Previous University</strong> — Bachelors in XYZ<br>
-        <span class="edu-date">2019 - 2023</span>
-      </li>
-    </ul>
-  </section>
+  
+    <!-- Work Experience Section -->
+    <section class="full-section">
+      <h2 class="section-title">
+        <i class="fas fa-briefcase"></i>
+        Work Experience
+      </h2>
+      <a href="https://www.ai.math.uni-muenchen.de" target="_blank" class="work-item-link">
+        <div class="work-item">
+          <h3 class="work-title">Research Student</h3>
+          <p class="work-company">Chair of Mathematical Foundations of Artificial Intelligence, LMU Munich</p>
+          <p class="work-desc">
+            Working on using Fourier Neural Operator as the backbone of diffusion models to generate high-quality weather data.
+          </p>
+        </div>
+      </a>
+    </section>
 
-  <section>
-    <h2><i class="fas fa-envelope"></i> Contact</h2>
-    <p>
-      Email: <a href="mailto:your.email@example.com">your.email@example.com</a>
-    </p>
-    <p>
-      <a href="https://github.com/Asthag29" target="_blank"><i class="fab fa-github"></i> GitHub</a> &nbsp;|&nbsp;
-      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    </p>
-  </section>
+    <!-- Projects Section -->
+    <section class="full-section">
+      <h2 class="section-title">
+        <i class="fas fa-code"></i>
+        Projects
+      </h2>
+      <div class="projects-grid">
+        <div class="project-item">
+          <h3 class="project-title">
+            <a href="https://github.com/Asthag29/MNIST_CONVOLUTION2D" target="_blank">
+              <i class="fab fa-github"></i> Digit Classification using CNN
+            </a>
+          </h3>
+          <ul class="project-desc">
+            <li>Built a CNN model using Conv2D layers for feature extraction and fully connected layers for classification</li>
+            <li>Achieved 95% accuracy on the digit classification task</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <h3 class="project-title">
+            <a href="https://github.com/Asthag29/NANO_GPT" target="_blank">
+              <i class="fab fa-github"></i> Multihead Transformer Model
+            </a>
+          </h3>
+          <ul class="project-desc">
+            <li>Coded a multihead transformer model from scratch, inspired by Andrey Karpathy's tutorials</li>
+            <li>Deeply understood the working mechanisms of attention and transformer architectures</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <h3 class="project-title">
+            <a href="https://github.com/Asthag29/Fourier_Series" target="_blank">
+              <i class="fab fa-github"></i> Face Boundary Detection with Fourier Series
+            </a>
+          </h3>
+          <ul class="project-desc">
+            <li>Built a system to draw boundaries of human faces using Canny operators</li>
+            <li>Approximated boundaries as functions using Fourier series for mathematical representation</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <h3 class="project-title">
+            <a href="https://github.com/Asthag29/FISH_MASK_UNET" target="_blank">
+              <i class="fab fa-github"></i> Fish Segmentation using U-Net
+            </a>
+          </h3>
+          <ul class="project-desc">
+            <li>Trained a U-Net model on 9000 fish images to generate segmentation masks</li>
+            <li>Integrated CLI using Typer for efficient model handling and performance monitoring</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <h3 class="project-title">
+            <a href="https://github.com/Asthag29/Stable_Diffusion" target="_blank">
+              <i class="fab fa-github"></i> Stable Diffusion Model
+            </a>
+          </h3>
+          <ul class="project-desc">
+            <li>Coded a stable diffusion model to understand CLIP models and variational autoencoders</li>
+            <li>Explored their application in generative modeling and image synthesis</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <h3 class="project-title">
+            <a href="https://github.com/Asthag29/NANO_GPT" target="_blank">
+              <i class="fab fa-github"></i> Nano Got
+            </a>
+          </h3>
+          <ul class="project-desc">
+            <li>Built a CNN model for digit classification with optimized architecture</li>
+            <li>Achieved 95% accuracy through careful hyperparameter tuning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    &copy; 2025 Astha Gupta &mdash; Made with <i class="fas fa-heart" style="color:#e25555;"></i>
-  </footer>
+    <!-- Skills Section -->
+    <section class="full-section">
+      <h2 class="section-title">
+        <i class="fas fa-tools"></i>
+        Skills & Interests
+      </h2>
+       
+      <div class="skills-grid">
+        <div class="skill-item">
+          <i class="fas fa-network-wired"></i>
+          <span>Large Language Models</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-atom"></i>
+          <span>Theoritical Deep Learning</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-python"></i>
+          <span>Python, R Programming</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-superscript"></i>
+          <span>Mathematical Statistics</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-wave-square"></i>
+          <span>Computer Vision</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-brain"></i>
+          <span>Data Science & Machine Learning</span>
+        </div>
+       
+      </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="full-section">
+      <h2 class="section-title">
+        <i class="fas fa-language"></i>
+        Languages
+      </h2>
+      <div class="languages-list">
+        <div class="language-item">
+          <i class="fas fa-globe"></i>
+          <span>English</span>
+        </div>
+        <div class="language-item">
+          <i class="fas fa-globe"></i>
+          <span>Hindi</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Astha Gupta • Munich, Germany</p>
+    </footer>
+  </div>
 </body>
 </html>
