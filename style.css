@@ -141,39 +141,13 @@ body {
   color: #c9c5b8;
 }
 
-/* Education Timeline */
-.education-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
+/* Education - Simple Layout */
 .education-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   padding: 1.5rem;
   border-left: 4px solid #d4af37;
   background: #3d3d3d;
   border-radius: 0 12px 12px 0;
-  gap: 2rem;
-}
-
-.education-content {
-  flex: 1;
-}
-
-.education-year {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #d4af37;
-  background: #2a2a2a;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  border: 1px solid #4a4a4a;
-  white-space: nowrap;
-  min-width: 120px;
-  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .edu-title {
