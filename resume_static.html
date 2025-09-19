@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Astha Gupta - Resume</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 40px;
+      color: #222;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0;
+    }
+    p.contact {
+      font-size: 12px;
+      margin: 2px 0;
+    }
+    h2 {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      margin: 6px 0 2px 0;
+    }
+    p, li {
+      font-size: 12px;
+      line-height: 1.4;
+      margin: 2px 0;
+    }
+    ul {
+      margin: 2px 0 8px 20px;
+      padding: 0;
+    }
+    .skills {
+      margin-top: 4px;
+      list-style: disc;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with photo -->
+  <div class="header">
+    <img src="image.png" alt="Astha Gupta">
+    <div>
+      <h1>Astha Gupta</h1>
+      <p class="contact">Munich, Germany</p>
+      <p class="contact"><a href="mailto:asthadu29@gmail.com">asthadu29@gmail.com</a> | 
+      <a href="https://github.com/Asthag29" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/astha-gupta-772878219/" target="_blank">LinkedIn</a></p>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="section">
+    <h2>Education</h2>
+    <div class="education">
+      <h3>Masters in Statistics & Data Science <span>2024 – Present</span></h3>
+      <p>Ludwig Maximilian University, Munich, Germany</p>
+      <ul class="skills">
+        <li>Focus on data science, statistics, and machine learning</li>
+        <li>Hands-on projects in deep learning and large language models</li>
+      </ul>
+
+      <h3>Bachelors in Statistics (Honours) <span>2021 – 2024</span></h3>
+      <p>University of Delhi, New Delhi, India | CGPA: 8.546</p>
+      <ul class="skills">
+        <li>Core statistics, probability, and applied mathematics</li>
+        <li>Projects in data analysis and predictive modeling</li>
+      </ul>
+
+      <h3>High School <span>2018 – 2021</span></h3>
+      <p>St. Joseph Academy, New Delhi, India | 96%</p>
+    </div>
+  </div>
+
+  <!-- Work Experience -->
+  <div class="section">
+    <h2>Work Experience</h2>
+    <div class="experience">
+      <h3>Research Student <span>Aug 2025 – Present</span></h3>
+      <p>Chair of Mathematical Foundations of Artificial Intelligence, LMU Munich</p>
+      <ul>
+        <li>Worked on diffusion models, replacing UNet backbone with Fourier Neural Operator for resolution invariance</li>
+        <li>Implemented uncertainty quantification to measure performance</li>
+        <li>Gained experience in training generative models and advanced diffusion architectures</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="section">
+    <h2>Projects</h2>
+    
+    <h3>Stable Diffusion Model <span>2025</span></h3>
+    <ul>
+      <li><strong>Goal:</strong> Coded stable diffusion model from scratch to understand the working mechanics.</li>
+      <li><strong>Learning:</strong> Deep understanding of DDPM and DDIM papers, plus insights into CLIP and autoencoding models.</li>
+      <li><strong>Improvement:</strong> It's a basic model now - planning to fine-tune it to generate some fun images.</li>
+    </ul>
+
+    <h3>Nano GPT <span>2024</span></h3>
+    <ul>
+      <li><strong>Goal:</strong> Understand how transformers work and why their architecture is so effective in extracting meaningful information.</li>
+      <li><strong>Learning:</strong> While following Andrey Karpathy's tutorial, I developed my own mathematical perspective on transformers. I explored how they transform high-dimensional vector spaces, extract patterns, and connect these ideas to basic vector algebra. I've documented the reasoning behind each layer in the repository.</li>
+    </ul>
+
+    <h3>Drawing Human Sketches using Fourier Series <span>2023</span></h3>
+    <ul>
+      <li><strong>Goal:</strong> Demonstrate live sketching of human faces using Fourier series. By gradually increasing frequencies, it creates the illusion of drawing from nothing – a pretty fun project!</li>
+      <li><strong>Learning:</strong> Explored Fourier series, edge detection kernels, and splines – three powerful tools combined to achieve the result.</li>
+      <li><strong>Improvement:</strong> Basic implementation works well, but I plan to use Manim to generate high-quality animations for the sketches.</li>
+    </ul>
+
+    <h3>Multi Food Segmentation using U-Net <span>2024</span></h3>
+    <ul>
+      <li><strong>Goal:</strong> MLOps project creating end-to-end pipeline from development to production, generating colored food masks for different foods</li>
+      <li><strong>Learning:</strong> Cloud platforms, Docker containers, Git backend + frontend development, quantization, pruning.</li>
+    </ul>
+
+    <h3>Digit Classification using CNN <span>2023</span></h3>
+    <ul>
+      <li><strong>Goal:</strong> Build CNN from scratch for deep understanding of convolutions, activations, and sampling methods</li>
+      <li><strong>Learning:</strong> Gained hands-on experience with Conv2D layers, feature extraction, and achieved 95% accuracy on MNIST</li>
+    </ul>
+
+    <h3>Neural Net Scratch Optimization <span>2022</span></h3>
+    <ul>
+      <li><strong>Goal:</strong> Code neural networks using only pandas and numpy - very first project!</li>
+      <li><strong>Learning:</strong> Understanding neural nets in depth, especially backpropagation mechanics and different optimization techniques</li>
+    </ul>
+
+  </div>
+
+  <!-- Skills -->
+  <div class="section">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Large Language Models</li>
+      <li>Neural Networks</li>
+      <li>Python, R Programming</li>
+      <li>Theoretical Deep Learning</li>
+      <li>Mathematics & Optimization</li>
+    </ul>
+  </div>
+
+  <!-- Languages -->
+  <div class="section">
+    <h2>Languages</h2>
+    <p>English, Hindi</p>
+  </div>
+
+</body>
+</html>
