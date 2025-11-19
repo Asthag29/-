@@ -5,171 +5,184 @@
   <title>Astha Gupta - Resume</title>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      margin: 40px;
-      color: #222;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      margin: 40px auto;
+      max-width: 850px;
+      color: #1a1a1a;
+      line-height: 1.6;
     }
     .header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .header img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-right: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #2c3e50;
     }
     h1 {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
-      margin: 0;
+      margin: 0 0 8px 0;
+      color: #2c3e50;
+    }
+    .tagline {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
     }
     p.contact {
       font-size: 12px;
-      margin: 2px 0;
+      margin: 5px 0;
+      color: #333;
+    }
+    p.contact a {
+      color: #2c3e50;
+      text-decoration: none;
     }
     h2 {
-      font-size: 16px;
-      margin-top: 20px;
-      margin-bottom: 8px;
-      font-weight: 600;
+      font-size: 18px;
+      margin-top: 25px;
+      margin-bottom: 12px;
+      font-weight: 700;
       text-transform: uppercase;
+      color: #2c3e50;
+      border-bottom: 1px solid #bdc3c7;
+      padding-bottom: 5px;
     }
     h3 {
       font-size: 14px;
       font-weight: 600;
       display: flex;
       justify-content: space-between;
-      margin: 6px 0 2px 0;
+      margin: 12px 0 4px 0;
+      color: #34495e;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #555;
+      margin: 2px 0;
+      font-style: italic;
     }
     p, li {
       font-size: 12px;
-      line-height: 1.4;
-      margin: 2px 0;
+      line-height: 1.5;
+      margin: 4px 0;
+      color: #333;
     }
     ul {
-      margin: 2px 0 8px 20px;
+      margin: 6px 0 12px 20px;
       padding: 0;
     }
-    .skills {
-      margin-top: 4px;
-      list-style: disc;
-      padding-left: 20px;
+    li {
+      margin: 3px 0;
+    }
+    .grade {
+      font-size: 12px;
+      color: #555;
+      margin: 2px 0;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    strong {
+      color: #2c3e50;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header with photo -->
+  <!-- Header -->
   <div class="header">
-    <img src="image.png" alt="Astha Gupta">
-    <div>
-      <h1>Astha Gupta</h1>
-      <p class="contact">Munich, Germany</p>
-      <p class="contact"><a href="mailto:asthadu29@gmail.com">asthadu29@gmail.com</a> | 
-      <a href="https://github.com/Asthag29" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/astha-gupta-772878219/" target="_blank">LinkedIn</a></p>
-    </div>
+    <h1>Astha Gupta</h1>
+    <p class="tagline">Masters in Statistics & Data Science</p>
+    <p class="tagline">Ludwig Maximilian University, Munich, Germany</p>
+    <p class="contact">
+      <a href="mailto:asthadu29@gmail.com">asthadu29@gmail.com</a> | 
+      <a href="https://github.com/Asthag29" target="_blank">github.com/Asthag29</a> | 
+      <a href="https://www.linkedin.com/in/astha-gupta-772878219/" target="_blank">LinkedIn</a>
+    </p>
   </div>
 
   <!-- Education -->
   <div class="section">
     <h2>Education</h2>
-    <div class="education">
-      <h3>Masters in Statistics & Data Science <span>2024 – Present</span></h3>
-      <p>Ludwig Maximilian University, Munich, Germany</p>
-      <ul class="skills">
-        <li>Focus on data science, statistics, and machine learning</li>
-        <li>Hands-on projects in deep learning and large language models</li>
-      </ul>
+    
+    <h3>Masters in Statistics & Data Science <span>2024 – Present</span></h3>
+    <p class="subtitle">Ludwig Maximilian University, Munich, Germany</p>
 
-      <h3>Bachelors in Statistics (Honours) <span>2021 – 2024</span></h3>
-      <p>University of Delhi, New Delhi, India | CGPA: 8.546</p>
-      <ul class="skills">
-        <li>Core statistics, probability, and applied mathematics</li>
-        <li>Projects in data analysis and predictive modeling</li>
-      </ul>
+    <h3>Bachelor of Science in Statistics (Honours) <span>2021 – 2024</span></h3>
+    <p class="subtitle">University of Delhi, New Delhi, India</p>
+    <p class="grade">CGPA: 8.546</p>
 
-      <h3>High School <span>2018 – 2021</span></h3>
-      <p>St. Joseph Academy, New Delhi, India | 96%</p>
-    </div>
+    <h3>High School <span>2018 – 2021</span></h3>
+    <p class="subtitle">St. Joseph Academy, New Delhi, India</p>
+    <p class="grade">Percentage: 96%</p>
   </div>
 
   <!-- Work Experience -->
   <div class="section">
     <h2>Work Experience</h2>
-    <div class="experience">
-      <h3>Research Student <span>Aug 2025 – Present</span></h3>
-      <p>Chair of Mathematical Foundations of Artificial Intelligence, LMU Munich</p>
-      <ul>
-        <li>Worked on diffusion models, replacing UNet backbone with Fourier Neural Operator for resolution invariance</li>
-        <li>Implemented uncertainty quantification to measure performance</li>
-        <li>Gained experience in training generative models and advanced diffusion architectures</li>
-      </ul>
-    </div>
+    
+    <h3>Research Student <span>August 2025 – Present</span></h3>
+    <p class="subtitle">Chair of Mathematical Foundations of Artificial Intelligence, LMU Munich</p>
+    <ul>
+      <li>Working on diffusion-based architectures for estimating solutions of Partial Differential Equations</li>
+      <li>Replacing U-shaped backbone in current PDE models with custom architecture consisting of global and local convolution layers</li>
+      <li>Implementing uncertainty quantification methods to measure model confidence</li>
+      <li>Gaining understanding of training generative models and advanced diffusion architectures</li>
+    </ul>
   </div>
 
   <!-- Projects -->
   <div class="section">
     <h2>Projects</h2>
     
-    <h3>Stable Diffusion Model <span>2025</span></h3>
+    <h3>Stable Diffusion Model(Scratch) </h3>
     <ul>
-      <li><strong>Goal:</strong> Coded stable diffusion model from scratch to understand the working mechanics.</li>
-      <li><strong>Learning:</strong> Deep understanding of DDPM and DDIM papers, plus insights into CLIP and autoencoding models.</li>
-      <li><strong>Improvement:</strong> It's a basic model now - planning to fine-tune it to generate some fun images.</li>
+      <li><strong>Objective:</strong> Implemented stable diffusion model from scratch to understand underlying mechanics and architecture</li>
+      <li><strong>Learnings:</strong> Gained deep understanding of DDPM and DDIM samplers, along with comprehensive knowledge of CLIP and autoencoding architectures</li>
+      <li><strong>Future Goal:</strong> Planning to do style transfer using this model as baseline</li>
     </ul>
 
-    <h3>Nano GPT <span>2024</span></h3>
+    <h3>Transformer(scratch) </h3>
     <ul>
-      <li><strong>Goal:</strong> Understand how transformers work and why their architecture is so effective in extracting meaningful information.</li>
-      <li><strong>Learning:</strong> While following Andrey Karpathy's tutorial, I developed my own mathematical perspective on transformers. I explored how they transform high-dimensional vector spaces, extract patterns, and connect these ideas to basic vector algebra. I've documented the reasoning behind each layer in the repository.</li>
+      <li><strong>Objective:</strong> Coded transformer architecture to understand it's major components: self-attention, cross-attention, and encoder-decoder mechanisms</li>
+      <li><strong>Learnings:</strong> Developed mathematical understanding of transformers, how vectors are transformed, patterns are learnt in latent space and then projected back into the original space. Wrote detailed explanations for each step in the repository</li>
     </ul>
 
-    <h3>Drawing Human Sketches using Fourier Series <span>2023</span></h3>
+    <h3>Drawing Contours using Fourier Transformation </h3>
     <ul>
-      <li><strong>Goal:</strong> Demonstrate live sketching of human faces using Fourier series. By gradually increasing frequencies, it creates the illusion of drawing from nothing – a pretty fun project!</li>
-      <li><strong>Learning:</strong> Explored Fourier series, edge detection kernels, and splines – three powerful tools combined to achieve the result.</li>
-      <li><strong>Improvement:</strong> Basic implementation works well, but I plan to use Manim to generate high-quality animations for the sketches.</li>
+      <li><strong>Objective:</strong> Developed end-to-end pipeline for drawing contours of cartoons and human faces using Fourier Transformation</li>
+      <li><strong>Learnings:</strong> Applied edge detection techniques, parametric spline fitting, Fourier Transformation, and JavaScript for frontend development</li>
     </ul>
 
-    <h3>Multi Food Segmentation using U-Net <span>2024</span></h3>
+    <h3>Multi-Food Segmentation using U-Net </h3>
     <ul>
-      <li><strong>Goal:</strong> MLOps project creating end-to-end pipeline from development to production, generating colored food masks for different foods</li>
-      <li><strong>Learning:</strong> Cloud platforms, Docker containers, Git backend + frontend development, quantization, pruning.</li>
+      <li><strong>Objective:</strong> MLOps project: creating CI/CD pipeline for generating segmentation masks for multiple food items</li>
+      <li><strong>Learnings:</strong> Used cloud services(Cloud storage,Cloud run,Compute Engine), Docker containers, Git version control,data version control, model quantization and pruning</li>
     </ul>
 
-    <h3>Digit Classification using CNN <span>2023</span></h3>
+    <h3>Neural Network Optimization from Scratch </h3>
     <ul>
-      <li><strong>Goal:</strong> Build CNN from scratch for deep understanding of convolutions, activations, and sampling methods</li>
-      <li><strong>Learning:</strong> Gained hands-on experience with Conv2D layers, feature extraction, and achieved 95% accuracy on MNIST</li>
+      <li><strong>Objective:</strong> Implemented neural networks using only Pandas and NumPy to understand fundamental concepts</li>
+      <li><strong>Learnings:</strong> Gained in-depth understanding of backpropagation mechanics and various optimization techniques</li>
     </ul>
-
-    <h3>Neural Net Scratch Optimization <span>2022</span></h3>
-    <ul>
-      <li><strong>Goal:</strong> Code neural networks using only pandas and numpy - very first project!</li>
-      <li><strong>Learning:</strong> Understanding neural nets in depth, especially backpropagation mechanics and different optimization techniques</li>
-    </ul>
-
   </div>
 
   <!-- Skills -->
   <div class="section">
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>Large Language Models</li>
-      <li>Neural Networks</li>
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Large Language Models and Generative AI</li>
+      <li>Neural Networks and Deep Learning</li>
       <li>Python, R Programming</li>
       <li>Theoretical Deep Learning</li>
-      <li>Mathematics & Optimization</li>
+      <li>Mathematics and Optimization</li>
     </ul>
   </div>
 
   <!-- Languages -->
   <div class="section">
     <h2>Languages</h2>
-    <p>English, Hindi</p>
+    <p>English (Fluent), Hindi (Native)</p>
   </div>
 
 </body>
