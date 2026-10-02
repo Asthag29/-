@@ -3,360 +3,381 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
   <title>Astha Gupta</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <nav class="site-nav" aria-label="Main">
-      <div class="brand"><a href="#">Astha Gupta</a></div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
+  <div class="shell">
+
+    <aside class="sidebar">
+      <img src="image.png" alt="Astha Gupta" class="avatar" width="88" height="88">
+      <h1 class="name">Astha Gupta</h1>
+      <p class="alias">Faith</p>
+      <p class="role">
+        MSc Statistics &amp; Data Science<br>
+        Ludwig Maximilian University, Munich
+      </p>
+
+      <nav class="toc" aria-label="Sections">
+        <ul>
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+
+      <ul class="contact">
+        <li><a href="mailto:asthadu29@gmail.com">asthadu29@gmail.com</a></li>
+        <li><a href="https://github.com/Asthag29" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/astha-gupta-772878219/" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
-    </nav>
-  </header>
+    </aside>
 
-  <main class="page">
+    <main class="content">
 
-    <header class="hero">
-      <img src="image.png" alt="Astha Gupta" class="hero-photo" width="112" height="112">
-      <h1>Astha Gupta <span class="hero-alias">(Faith)</span></h1>
-      <p class="hero-role">Masters in Statistics &amp; Data Science</p>
-      <p class="hero-place">Ludwig Maximilian University · Munich, Germany</p>
-      <div class="hero-links">
-        <a href="mailto:asthadu29@gmail.com">asthadu29@gmail.com</a>
-        <a href="https://github.com/Asthag29" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/astha-gupta-772878219/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </header>
+      <section class="section" id="about">
+        <h2 class="section-label">About</h2>
+        <p class="prose prose-lead">
+          I started my degree in <strong>Data Science</strong> with zero idea of what it actually was.
+          Between multiple breakdowns and lectures, I slowly started enjoying it.
+        </p>
+        <p class="prose">
+          Now, I work at the university in the <strong>Mathematics and AI Department</strong>, build my
+          independent projects, and in my spare time experiment with makeup, fashion, and sewing.
+          I have won multiple state-level mathematics olympiads as a child, and recently, I was awarded with the
+          <strong>LMU SIST Completion Scholarship</strong>.
+        </p>
+      </section>
 
-    <section class="block" id="about">
-      <h2 class="block-title">About</h2>
-      <p class="prose">
-        I started my degree in <strong>Data Science</strong> with zero idea of what it actually was.
-        Between multiple breakdowns and lectures, I slowly started enjoying it. Now, I work at the
-        university in the <strong>Mathematics and AI Department</strong>, build my independent projects,
-        and in my spare time experiment with makeup, fashion, and sewing.
-        I have won multiple state-level mathematics olympiads as a child, and recently, I was awarded with the
-        <strong>LMU SIST Completion Scholarship</strong>.
-      </p>
-    </section>
+      <section class="section" id="research">
+        <h2 class="section-label">Research interests</h2>
+        <p class="prose">
+          My research interests are pretty diverse, but mainly involve work at the intersection of
+          <strong>mathematics and machine learning</strong>. My current focus is in the domain of
+          <strong>computer vision</strong>, specifically <strong>generative modeling and diffusion models</strong>.
+          I also enjoy working on <strong>large language models</strong> and <strong>NLP</strong> tasks.
+          I am still exploring multiple directions, and would love to contribute to new ideas and projects.
+        </p>
+      </section>
 
-    <section class="block" id="research">
-      <h2 class="block-title">Research interests</h2>
-      <p class="prose">
-        My research interests are pretty diverse, but mainly involve work at the intersection of
-        <strong>mathematics and machine learning</strong>. My current focus is in the domain of
-        <strong>computer vision</strong>, specifically <strong>generative modeling and diffusion models</strong>.
-        I also enjoy working on <strong>large language models</strong> and <strong>NLP</strong> tasks.
-        I am still exploring multiple directions, and would love to contribute to new ideas and projects.
-      </p>
-    </section>
+      <section class="section" id="experience">
+        <h2 class="section-label">Experience</h2>
 
-    <section class="block" id="education">
-      <h2 class="block-title">Education</h2>
-
-      <article class="item">
-        <div class="item-row">
-          <h3 class="item-title">Masters in Statistics &amp; Data Science</h3>
-          <time class="item-date">2024 – Present</time>
-        </div>
-        <div class="item-row">
-          <p class="item-sub">Ludwig Maximilian University</p>
-          <span class="item-location">Munich, Germany</span>
-        </div>
-      </article>
-
-      <article class="item">
-        <div class="item-row">
-          <h3 class="item-title">Bachelor of Science in Statistics (Honours)</h3>
-          <time class="item-date">2021 – 2024</time>
-        </div>
-        <div class="item-row">
-          <p class="item-sub">University of Delhi</p>
-          <span class="item-location">New Delhi, India</span>
-        </div>
-        <p class="item-extra"><strong>CGPA:</strong> 8.546</p>
-        <p class="item-extra">Placed 3rd in my batch</p>
-      </article>
-
-      <article class="item">
-        <div class="item-row">
-          <h3 class="item-title">High School</h3>
-          <time class="item-date">2018 – 2021</time>
-        </div>
-        <div class="item-row">
-          <p class="item-sub">St. Joseph Academy</p>
-          <span class="item-location">New Delhi, India</span>
-        </div>
-        <p class="item-extra"><strong>Percentage:</strong> 96%</p>
-      </article>
-    </section>
-
-    <section class="block" id="experience">
-      <h2 class="block-title">Experience</h2>
-
-      <article class="item">
-        <div class="item-row">
-          <h3 class="item-title">Research Student</h3>
-          <time class="item-date">August 2025 – Present</time>
-        </div>
-        <div class="item-row">
-          <p class="item-sub">
-            <a href="https://www.ai.math.uni-muenchen.de/index.html" target="_blank" rel="noopener">Chair of Mathematical Foundations of Artificial Intelligence</a>
-            <span class="item-note">(<a href="https://en.wikipedia.org/wiki/Gitta_Kutyniok" target="_blank" rel="noopener">Professor Gitta Kutyniok</a>)</span>
-          </p>
-          <span class="item-location">LMU Munich · Munich, Germany</span>
-        </div>
-        <ul class="item-list">
-          <li>Developing models which could improve the prediction of PDEs using diffusion models and neural operators.</li>
-          <li>Implementing uncertainty quantification methods to measure model confidence.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-row">
-          <h3 class="item-title">Research Student</h3>
-          <time class="item-date">February 2026 – Present</time>
-        </div>
-        <div class="item-row">
-          <p class="item-sub">
-            <a href="https://www.byzantinistik.uni-muenchen.de/forschung/projekte/probyz/nomos/index.html" target="_blank" rel="noopener">NOMOS Group</a>
-            <span class="item-note">(Prof. Dr. Zachary Chitwood, Dr. Andreas Bender)</span>
-          </p>
-          <span class="item-location">LMU Munich · Munich, Germany</span>
-        </div>
-        <ul class="item-list">
-          <li>Developing a machine learning pipeline which could transcribe texts from old Byzantine Greek manuscripts using OCR and vision language models.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="block" id="projects">
-      <h2 class="block-title">Projects</h2>
-
-      <article class="item">
-        <div class="item-row">
-          <h3 class="item-title">
-            <a href="https://github.com/Asthag29/Stable_Diffusion" target="_blank" rel="noopener">Stable Diffusion Model</a>
-          </h3>
-          <time class="item-date">January 2025 – Present</time>
-        </div>
-        <div class="item-row">
-          <p class="item-tag">Self learning purpose</p>
-          <span class="item-location">Munich, Germany</span>
-        </div>
-        <ul class="item-list">
-          <li><strong>Objective:</strong> Implemented stable diffusion model from scratch to understand underlying mechanics and architecture.</li>
-          <li><strong>Learnings:</strong> Gained deep understanding of DDPM and DDIM samplers, along with comprehensive knowledge of CLIP and autoencoding architectures.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-row">
-          <h3 class="item-title">
-            <a href="https://github.com/Asthag29/llama_omni_hindi_" target="_blank" rel="noopener">Hindi Llama Omni Model</a>
-          </h3>
-          <time class="item-date">October 2025 – Present</time>
-        </div>
-        <div class="item-row">
-          <p class="item-tag">
-            Applied deep learning project
-            <span class="item-note">(Professor Mina Rezaei)</span>
-          </p>
-          <span class="item-location">Munich, Germany</span>
-        </div>
-        <ul class="item-list">
-          <li><strong>Objective:</strong> Building a Hindi speech-to-speech model inspired by the architecture of the Llama Omni model.</li>
-          <li><strong>Learnings:</strong> The goal is to build a system which could understand and talk back to the user in Hindi, with the main focus on reducing latency.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-row">
-          <h3 class="item-title">
-            <a href="https://github.com/Asthag29/Transformer_Architecture" target="_blank" rel="noopener">Transformer Architecture</a>
-          </h3>
-          <time class="item-date">June 2024 – September 2024</time>
-        </div>
-        <div class="item-row">
-          <p class="item-tag">Theory focused project</p>
-          <span class="item-location">Munich, Germany</span>
-        </div>
-        <ul class="item-list">
-          <li><strong>Objective:</strong> Coded transformer architecture to understand its major components including self-attention, cross-attention, encoder-decoder mechanisms, etc.</li>
-          <li><strong>Learnings:</strong> Understood the mathematics behind the transformer architecture and wrote detailed explanations for each component in the repository.</li>
-        </ul>
-      </article>
-
-      <article class="item">
-        <div class="item-row">
-          <h3 class="item-title">
-            <a href="https://github.com/Asthag29/Fourier_Transformation" target="_blank" rel="noopener">Drawing Sketches using Fourier Transformation</a>
-          </h3>
-          <time class="item-date">February 2024 – May 2024</time>
-        </div>
-        <div class="item-row">
-          <p class="item-tag">
-            Inspired by
-            <a href="https://www.jezzamon.com/fourier/" target="_blank" rel="noopener">jezzamon.com/fourier</a>;
-            extended for human sketches
-          </p>
-          <span class="item-location">Munich, Germany</span>
-        </div>
-        <ul class="item-list">
-          <li><strong>Objective:</strong> Developed end-to-end pipeline for drawing contours of human faces using Fourier Transformation.</li>
-          <li><strong>Learnings:</strong> Applied edge detection techniques, parametric spline fitting, Fourier Transformation, and JavaScript for frontend development.</li>
-          <li><strong>Live demo:</strong> <a href="https://astha-fourier.netlify.app/" target="_blank" rel="noopener">astha-fourier.netlify.app</a></li>
-        </ul>
-
-        <div class="project-showcase" id="fourier-demo">
-          <p class="project-showcase-label">Fourier epicycles in action</p>
-          <div class="project-showcase-frame">
-            <video
-              class="project-showcase-video"
-              src="New_shinchan.mp4"
-              muted
-              loop
-              playsinline
-              webkit-playsinline
-              preload="auto"
-              poster="image.png"
-              aria-label="Shinchan contour animation drawn with Fourier epicycles"
-            ></video>
+        <article class="entry">
+          <div class="entry-meta">
+            <time>Aug 2025 — Present</time>
+            <span>LMU Munich</span>
           </div>
-          <p class="project-showcase-caption">
-            Shinchan drawn from image edges using rotating epicycles —
-            <a href="https://github.com/Asthag29/Fourier_Transformation" target="_blank" rel="noopener">view on GitHub</a>
-          </p>
-          <button
-            type="button"
-            class="project-showcase-toggle"
-            aria-pressed="false"
-            aria-label="Pause demo video"
-          >
-            Pause
-          </button>
+          <div class="entry-body">
+            <h3 class="entry-title">Research Student</h3>
+            <p class="entry-org">
+              <a href="https://www.ai.math.uni-muenchen.de/index.html" target="_blank" rel="noopener">Chair of Mathematical Foundations of Artificial Intelligence</a>
+              <span class="entry-note">(<a href="https://en.wikipedia.org/wiki/Gitta_Kutyniok" target="_blank" rel="noopener">Professor Gitta Kutyniok</a>)</span>
+            </p>
+            <ul class="entry-list">
+              <li>Developing models which could improve the prediction of PDEs using diffusion models and neural operators.</li>
+              <li>Implementing uncertainty quantification methods to measure model confidence.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta">
+            <time>Feb 2026 — Present</time>
+            <span>LMU Munich</span>
+          </div>
+          <div class="entry-body">
+            <h3 class="entry-title">Research Student</h3>
+            <p class="entry-org">
+              <a href="https://www.byzantinistik.uni-muenchen.de/forschung/projekte/probyz/nomos/index.html" target="_blank" rel="noopener">NOMOS Group</a>
+              <span class="entry-note">(Prof. Dr. Zachary Chitwood, Dr. Andreas Bender)</span>
+            </p>
+            <ul class="entry-list">
+              <li>Developing a machine learning pipeline which could transcribe texts from old Byzantine Greek manuscripts using OCR and vision language models.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="projects">
+        <h2 class="section-label">Projects</h2>
+
+        <article class="entry">
+          <div class="entry-meta">
+            <time>Jan 2025 — Present</time>
+            <span>Munich, Germany</span>
+          </div>
+          <div class="entry-body">
+            <h3 class="entry-title">
+              <a href="https://github.com/Asthag29/Stable_Diffusion" target="_blank" rel="noopener">Stable Diffusion Model</a>
+            </h3>
+            <p class="entry-tag">Self learning purpose</p>
+            <ul class="entry-list">
+              <li><strong>Objective:</strong> Implemented stable diffusion model from scratch to understand underlying mechanics and architecture.</li>
+              <li><strong>Learnings:</strong> Gained deep understanding of DDPM and DDIM samplers, along with comprehensive knowledge of CLIP and autoencoding architectures.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta">
+            <time>Oct 2025 — Present</time>
+            <span>Munich, Germany</span>
+          </div>
+          <div class="entry-body">
+            <h3 class="entry-title">
+              <a href="https://github.com/Asthag29/llama_omni_hindi_" target="_blank" rel="noopener">Hindi Llama Omni Model</a>
+            </h3>
+            <p class="entry-tag">
+              Applied deep learning project
+              <span class="entry-note">(Professor Mina Rezaei)</span>
+            </p>
+            <ul class="entry-list">
+              <li><strong>Objective:</strong> Building a Hindi speech-to-speech model inspired by the architecture of the Llama Omni model.</li>
+              <li><strong>Learnings:</strong> The goal is to build a system which could understand and talk back to the user in Hindi, with the main focus on reducing latency.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta">
+            <time>Jun 2024 — Sep 2024</time>
+            <span>Munich, Germany</span>
+          </div>
+          <div class="entry-body">
+            <h3 class="entry-title">
+              <a href="https://github.com/Asthag29/Transformer_Architecture" target="_blank" rel="noopener">Transformer Architecture</a>
+            </h3>
+            <p class="entry-tag">Theory focused project</p>
+            <ul class="entry-list">
+              <li><strong>Objective:</strong> Coded transformer architecture to understand its major components including self-attention, cross-attention, encoder-decoder mechanisms, etc.</li>
+              <li><strong>Learnings:</strong> Understood the mathematics behind the transformer architecture and wrote detailed explanations for each component in the repository.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta">
+            <time>Feb 2024 — May 2024</time>
+            <span>Munich, Germany</span>
+          </div>
+          <div class="entry-body">
+            <h3 class="entry-title">
+              <a href="https://github.com/Asthag29/Fourier_Transformation" target="_blank" rel="noopener">Drawing Sketches using Fourier Transformation</a>
+            </h3>
+            <p class="entry-tag">
+              Inspired by
+              <a href="https://www.jezzamon.com/fourier/" target="_blank" rel="noopener">jezzamon.com/fourier</a>;
+              extended for human sketches
+            </p>
+            <ul class="entry-list">
+              <li><strong>Objective:</strong> Developed end-to-end pipeline for drawing contours of human faces using Fourier Transformation.</li>
+              <li><strong>Learnings:</strong> Applied edge detection techniques, parametric spline fitting, Fourier Transformation, and JavaScript for frontend development.</li>
+              <li><strong>Live demo:</strong> <a href="https://astha-fourier.netlify.app/" target="_blank" rel="noopener">astha-fourier.netlify.app</a></li>
+            </ul>
+
+            <figure class="showcase" id="fourier-demo">
+              <div class="showcase-bar">
+                <span class="showcase-label">Fourier epicycles in action</span>
+                <button
+                  type="button"
+                  class="showcase-toggle"
+                  aria-pressed="false"
+                  aria-label="Pause demo video"
+                >Pause</button>
+              </div>
+              <video
+                class="showcase-video"
+                src="New_shinchan.mp4"
+                muted
+                loop
+                playsinline
+                webkit-playsinline
+                preload="auto"
+                aria-label="Shinchan contour animation drawn with Fourier epicycles"
+              ></video>
+              <figcaption class="showcase-caption">
+                Shinchan drawn from image edges using rotating epicycles ·
+                <a href="https://github.com/Asthag29/Fourier_Transformation" target="_blank" rel="noopener">view on GitHub</a>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="education">
+        <h2 class="section-label">Education</h2>
+
+        <article class="entry">
+          <div class="entry-meta">
+            <time>2024 — Present</time>
+            <span>Munich, Germany</span>
+          </div>
+          <div class="entry-body">
+            <h3 class="entry-title">Masters in Statistics &amp; Data Science</h3>
+            <p class="entry-org">Ludwig Maximilian University</p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta">
+            <time>2021 — 2024</time>
+            <span>New Delhi, India</span>
+          </div>
+          <div class="entry-body">
+            <h3 class="entry-title">Bachelor of Science in Statistics (Honours)</h3>
+            <p class="entry-org">University of Delhi</p>
+            <p class="entry-detail"><strong>CGPA:</strong> 8.546</p>
+            <p class="entry-detail">Placed 3rd in my batch</p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-meta">
+            <time>2018 — 2021</time>
+            <span>New Delhi, India</span>
+          </div>
+          <div class="entry-body">
+            <h3 class="entry-title">High School</h3>
+            <p class="entry-org">St. Joseph Academy</p>
+            <p class="entry-detail"><strong>Percentage:</strong> 96%</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="skills">
+        <h2 class="section-label">Technical skills</h2>
+
+        <div class="skills">
+          <div class="skills-group">
+            <h3 class="skills-category">Machine learning &amp; AI</h3>
+            <ul class="skills-list">
+              <li>Large language models &amp; generative AI</li>
+              <li>Neural networks &amp; deep learning</li>
+              <li>Theoretical deep learning</li>
+              <li>Diffusion models</li>
+              <li>Computer vision</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-category">Programming</h3>
+            <ul class="skills-list">
+              <li>Python</li>
+              <li>R</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-category">Mathematics</h3>
+            <ul class="skills-list">
+              <li>Optimization</li>
+              <li>Mathematical statistics</li>
+            </ul>
+          </div>
         </div>
-      </article>
-    </section>
+      </section>
 
-    <section class="block" id="skills">
-      <h2 class="block-title">Technical skills</h2>
-
-      <div class="skills-group">
-        <h3 class="skills-category">Machine learning &amp; AI</h3>
-        <ul class="skills-list">
-          <li>Large language models &amp; generative AI</li>
-          <li>Neural networks &amp; deep learning</li>
-          <li>Theoretical deep learning</li>
-          <li>Diffusion models</li>
-          <li>Computer vision</li>
+      <section class="section" id="languages">
+        <h2 class="section-label">Languages</h2>
+        <ul class="languages">
+          <li><span class="lang-name">English</span><span class="lang-level">Fluent</span></li>
+          <li><span class="lang-name">Hindi</span><span class="lang-level">Native</span></li>
         </ul>
-      </div>
+      </section>
 
-      <div class="skills-group">
-        <h3 class="skills-category">Programming</h3>
-        <ul class="skills-list">
-          <li>Python</li>
-          <li>R</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
+      <footer class="site-footer">
+        <p>Astha Gupta · Munich, Germany</p>
+      </footer>
 
-      <div class="skills-group">
-        <h3 class="skills-category">Mathematics</h3>
-        <ul class="skills-list">
-          <li>Optimization</li>
-          <li>Mathematical statistics</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="block" id="languages">
-      <h2 class="block-title">Languages</h2>
-      <ul class="stack-list">
-        <li><strong>English</strong> <span>— Fluent</span></li>
-        <li><strong>Hindi</strong> <span>— Native</span></li>
-      </ul>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <p>Astha Gupta · Munich, Germany</p>
-  </footer>
+    </main>
+  </div>
 
   <script>
+    (function () {
+      var links = document.querySelectorAll(".toc a");
+      var sections = Array.prototype.map.call(links, function (link) {
+        return document.querySelector(link.getAttribute("href"));
+      });
+
+      if (!("IntersectionObserver" in window)) return;
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            links.forEach(function (link) {
+              link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id);
+            });
+          });
+        },
+        { rootMargin: "0px 0px -70% 0px" }
+      );
+
+      sections.forEach(function (section) {
+        if (section) observer.observe(section);
+      });
+    })();
+
     (function () {
       var showcase = document.getElementById("fourier-demo");
       if (!showcase) return;
 
-      var video = showcase.querySelector(".project-showcase-video");
-      var toggle = showcase.querySelector(".project-showcase-toggle");
+      var video = showcase.querySelector(".showcase-video");
+      var toggle = showcase.querySelector(".showcase-toggle");
       var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var paused = false;
 
       function setPlaying(playing) {
-        if (!video || !toggle) return;
+        paused = !playing;
         if (playing) {
           video.play().catch(function () {});
-          showcase.classList.remove("project-showcase--paused");
-          toggle.setAttribute("aria-pressed", "false");
-          toggle.setAttribute("aria-label", "Pause demo video");
           toggle.textContent = "Pause";
+          toggle.setAttribute("aria-label", "Pause demo video");
         } else {
           video.pause();
-          showcase.classList.add("project-showcase--paused");
-          toggle.setAttribute("aria-pressed", "true");
-          toggle.setAttribute("aria-label", "Play demo video");
           toggle.textContent = "Play";
+          toggle.setAttribute("aria-label", "Play demo video");
         }
-      }
-
-      function tryPlay() {
-        if (!video || reducedMotion) return;
-        video.muted = true;
-        video.play().catch(function () {});
+        toggle.setAttribute("aria-pressed", String(paused));
       }
 
       if (reducedMotion) {
-        showcase.classList.add("project-showcase--reduced-motion");
-        if (video) {
-          video.pause();
-          video.controls = true;
-        }
-      } else if (video && "IntersectionObserver" in window) {
-        var observer = new IntersectionObserver(
+        video.controls = true;
+        toggle.hidden = true;
+        return;
+      }
+
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(
           function (entries) {
             entries.forEach(function (entry) {
-              if (entry.isIntersecting && !showcase.classList.contains("project-showcase--paused")) {
-                tryPlay();
+              if (entry.isIntersecting && !paused) {
+                video.muted = true;
+                video.play().catch(function () {});
               } else if (!entry.isIntersecting) {
                 video.pause();
               }
             });
           },
           { threshold: 0.35 }
-        );
-        observer.observe(showcase);
-      } else if (video) {
-        tryPlay();
+        ).observe(showcase);
+      } else {
+        video.play().catch(function () {});
       }
 
-      if (toggle && video) {
-        toggle.addEventListener("click", function () {
-          setPlaying(showcase.classList.contains("project-showcase--paused"));
-        });
-      }
+      toggle.addEventListener("click", function () {
+        setPlaying(paused);
+      });
     })();
   </script>
 </body>
