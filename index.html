@@ -17,7 +17,6 @@
     <aside class="sidebar">
       <img src="image.png" alt="Astha Gupta" class="avatar" width="88" height="88">
       <h1 class="name">Astha Gupta</h1>
-      <p class="alias">Faith</p>
       <p class="role">
         MSc Statistics &amp; Data Science<br>
         Ludwig Maximilian University, Munich
@@ -124,6 +123,24 @@
               <li><strong>Objective:</strong> Implemented stable diffusion model from scratch to understand underlying mechanics and architecture.</li>
               <li><strong>Learnings:</strong> Gained deep understanding of DDPM and DDIM samplers, along with comprehensive knowledge of CLIP and autoencoding architectures.</li>
             </ul>
+
+            <figure class="clip">
+              <video
+                class="clip-video"
+                src="stable_diffusion_demo.mp4"
+                width="200"
+                height="200"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="Stable Diffusion denoising an image step by step"
+              ></video>
+              <figcaption class="clip-caption">
+                Denoising process: the image emerges from pure noise step by step.
+              </figcaption>
+            </figure>
           </div>
         </article>
 
@@ -309,24 +326,36 @@
         return document.querySelector(link.getAttribute("href"));
       });
 
-      if (!("IntersectionObserver" in window)) return;
+      var ticking = false;
 
-      var observer = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            if (!entry.isIntersecting) return;
-            links.forEach(function (link) {
-              link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id);
-            });
-          });
-        },
-        { rootMargin: "0px 0px -70% 0px" }
-      );
+      function update() {
+        ticking = false;
+        var line = window.innerHeight * 0.3;
+        var current = 0;
+        sections.forEach(function (section, i) {
+          if (section && section.getBoundingClientRect().top <= line) current = i;
+        });
+        links.forEach(function (link, i) {
+          link.classList.toggle("active", i === current);
+        });
+      }
 
-      sections.forEach(function (section) {
-        if (section) observer.observe(section);
-      });
+      window.addEventListener("scroll", function () {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(update);
+        }
+      }, { passive: true });
+      window.addEventListener("load", update);
+      update();
     })();
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll("video[autoplay]").forEach(function (video) {
+        video.pause();
+        video.controls = true;
+      });
+    }
 
     (function () {
       var showcase = document.getElementById("fourier-demo");

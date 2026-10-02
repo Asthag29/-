@@ -102,14 +102,6 @@ button:focus-visible {
   color: var(--text);
 }
 
-.alias {
-  margin-top: 0.35rem;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.15rem;
-  color: var(--accent);
-}
-
 .role {
   margin-top: 1.25rem;
   font-size: 0.875rem;
@@ -347,6 +339,31 @@ button:focus-visible {
   color: var(--text);
 }
 
+/* Inline project clip */
+.clip {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.clip-video {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #000;
+}
+
+.clip-caption {
+  max-width: 220px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
 /* Fourier showcase */
 .showcase {
   margin-top: 1.5rem;
@@ -529,6 +546,11 @@ button:focus-visible {
   .skills {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .clip-video {
+    width: 160px;
+    height: 160px;
   }
 }
 
